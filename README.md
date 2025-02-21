@@ -1,71 +1,16 @@
-- 도메인 호스팅 : hostingkr, 구글오어스 포우, 2년 21450원
-- vercel 월 20달러
-- 수퍼베이스 : 월 25달러
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d181598-f03c-499a-9311-f476de29e709" alt="Vetool Logo">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8761dece-907f-4a9b-b50d-30e342856663" alt="Vetool Logo">
+</p>
+  
+<h3 align="center">데이터 기반의 스마트한 의사결정, Vetool은 수의학 진료의 미래를 만들어 갑니다</h3>
 
-```ts
-// 맥OS 한글 마지막 중복입력 에러
-if (e.nativeEvent.isComposing || e.key !== 'Enter') return
-```
+<br />
 
-## 규칙
+<p>지속적인 연구 개발과, 수의사의 피드백을 바탕으로 만들어진 최고 수준의 전문가 도구를 제공합니다.</p>
+<p>
+종이로 기록하고, 데이터화하지 못했던, 다양한 전문가 차트를 디지털화하고 간소화하여 수의사 업무 효율을 혁신적으로 개선합니다.
+</p>
 
-- 선언순서
-
-1. 구조분해 2. next hook 3. custom hook 4. react hook /
-
-- 타입선언
-
-  import ( type ~ ) from ~
-
-- Props 타이핑
-
-props가 한개인경우 구조분해 할당으로, 2개 이상인 경우 타입 선언
-
-```ts
-🚫🚫
-type Props = {
-  defaultChartOrders: SelectedIcuOrder[]
-}
-
-export default function DefaultOrdersTable({
-  defaultChartOrders,
-}: Props) {}
-
-
-✅✅
-export default function DefaultOrdersTable({
-  defaultChartOrders,
-}: {
-  defaultChartOrders: SelectedIcuOrder[]
-}) {}
-```
-
-- CRUD 함수 명명법
-
-  - create : insertTodo
-  - read : getTodo
-  - update : updateTodo
-  - delete : deleteTodo
-
-- boolean 변수는 isEdit, isIcu 등 is 붙이기
-
-- Visually hidden
-
-```tsx
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
-export default function CalculatorSheetContent() {
-  return (
-    <VisuallyHidden>
-      <SheetTitle />
-      <SheetDescription />
-    </VisuallyHidden>
-  )
-}
-```
-
-- 하나의 object를 가져오는 경우, 다수의 객체를 가져오는 경우 함수 명명
-
-```
-getTodo
-getTodos
-```
